@@ -1,4 +1,6 @@
-from config import FILE_TYPES
+#from config import FILE_TYPES
+from organizer.config import FILE_TYPES
+
 from pathlib import Path
 
 def get_category(extension):

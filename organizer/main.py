@@ -3,7 +3,9 @@ import shutil
 import sys
 
 #from utils import get_category
-from utils import get_category, get_unique_filename
+#from utils import get_category, get_unique_filename
+from organizer.utils import get_category, get_unique_filename
+
 
 if len(sys.argv) < 2:
     #print("Usage: python organizer.py <folder_path>")
@@ -24,7 +26,26 @@ if not folder_path.is_dir():
     print("Error: Provided path is not a folder")
     sys.exit()
 
-for item in folder_path.iterdir():
+#for item in folder_path.iterdir():
+for item in folder_path.rglob("*"):
+    
+    ORGANIZED_FOLDERS = [
+        "Images",
+        "Documents",
+        "Videos",
+        "Audio",
+        "Archives",
+        "Code",
+        "Executables",
+        "Libraries",
+        "System",
+        ]
+        
+    if any(part in ORGANIZED_FOLDERS for part in item.parts):
+        
+        continue
+
+    
     if item.is_file():
         extension = item.suffix
 

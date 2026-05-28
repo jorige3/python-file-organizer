@@ -7,4 +7,5 @@ FILE_TYPES = {
 "Code": [".py", ".js", ".html", ".css", ".java", ".cpp", ".c", ".cs", ".rb", ".go", ".php", ".swift", ".ts", ".tsx", ".jsx", ".json", ".xml", ".yml", ".yaml", ".ps1", ".vbs", ".lua", ".pl", ".r", ".sql", ".asm", ".s", ".h", ".hpp", ".inc", ".m", ".mm", ".vb"],
 "Executables": [".exe", ".bat", ".sh", ".app", ".msi", ".bin", ".cmd", ".com", ".gadget", ".inf", ".ins", ".isp", ".jse", ".lnk", ".pif", ".reg", ".scf", ".scr", ".sct", ".vbe", ".vbs", ".ws", ".wsc", ".wsf"],
 "Libraries": [".dll", ".so", ".dylib", ".jar", ".lib", ".a", ".o", ".obj", ".ko", ".drv", ".vxd", ".386", ".sys", ".cpl", ".ocx", ".ax", ".scr", ".msi", ".msp", ".mst", ".reg", ".inf", ".cat"],
+"System": [".log", ".bak", ".tmp"]
 }
